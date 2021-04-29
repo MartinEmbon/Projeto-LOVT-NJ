@@ -24,32 +24,52 @@ header .navbar {
     width:100%;
     background-color: white;
     display:flex;
+    
     justify-content: space-between;
     align-items: center;
 
 }
 
+
 header .logo h1{
     font-size: 4rem;
     padding:10px;
+    margin:.5rem;
     
 }
 
-.logo h1,h2{
+.logo h1,
+.logo h2{
     float:left;
-    margin-left:10px;
-    
+    margin:.5rem;
+    align-items: center;
 }
 
 .logo h2 {
     padding-top:15px;
 }
 
+@media screen and (max-width:860px){
+    .logo {
+        align-self: flex-start;
+    }
+    
+    .logo h1,
+    .logo h2 {
+        margin:0;
+        padding:0;
+
+    }   
+    .logo h2 {
+        padding-top:25px;
+    }
+}
+
 header .toggle-button {
     position:absolute;
-    top:2rem;
-    right: 10rem;
-    display:flex;
+    top:2.5rem;
+    right: 5.1rem;
+    display:none;
     justify-content: space-between;
     width:30px;
     height:21px;
@@ -62,6 +82,71 @@ header .toggle-button .bar{
     width:100%;
     border-radius:10px;
 }
+
+
+.navbar-links ul {
+    display:flex;
+    justify-content: space-between;
+    margin: 0;
+    padding:0;
+
+}
+
+.navbar-links li {
+    list-style: none;
+    padding:1rem
+}
+
+.navbar-links li:hover{
+    background-color: orangered;
+}
+
+.navbar-links li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding:1rem;
+    color:black;
+
+}
+
+
+@media screen and (max-width:850px){
+    header .logo{
+        text-align: left;
+        margin:0;
+        padding:0;
+    }
+    
+    header .toggle-button {
+        display:flex;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+    
+    .navbar-links {
+        display:none;
+        width: 100%;
+    }
+    .navbar-links ul {
+        width:100%;
+        flex-direction:row;
+        justify-content: space-between;
+        
+    }
+   
+    
+    .navbar-links.active{
+        display:flex;
+        
+    }
+   
+}
+
+
 
 .slide img{
     width:100%;
