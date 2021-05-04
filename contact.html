@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style-form.css">
     <title>Lovt</title>
 </head>
 <body>
@@ -34,50 +35,17 @@
             </div>
         </nav>
         
-        
-        
     </header>
 
-    <main>
-        <section class="banner">
-            <div class="slide">
-                <img src="img/Rectangle 3img-ppal.png" alt="imagenppal">
-            </div>
-            <div class="setas">
-                <a href="#" class="left" title="anterior"></a>
-                <a href="#" class="right" title="proximo"></a>
-            </div>
-        </section>
-
-    
-        <section class="projects">
-            <div class="card-container">
-                <div class="card">
-                    <img src="img/Rectangle 6-card-izq.png">
-                    <p class="precio">$1200</p>
-                    <p class="descrip">Lorem ipsum dolor. Recusandae itaque laborum praesentium fugiat quas sunt repellendus qui atque reiciendis eius ab quae culpa repudiandae, nemo possimus accusantium, enim minima aperiam.</p>
-                </div>
-                <div class="divisor"></div>
-                <div class="card">
-                    <img src="img/Rectangle 7-card-der.png">
-                    <p class="precio">$1200</p>
-                    <p class="descrip">Lorem ipsum dolor. Recusandae itaque laborum praesentium fugiat quas sunt repellendus qui atque reiciendis eius ab quae culpa repudiandae, nemo possimus accusantium, enim minima aperiam.</p>
-                </div>
-            </div>
-
-        </section>
-        <div class="divisor"></div>
-        <section class="styles">
-            <h2>Your Style</h2>
-            <div class="imagen-styles">
-                <img src="img/Rectangle 11-primer.png" alt="primerimg">
-                <img src="img/Rectangle 12-seg.png" alt="segundaimg">
-                <img src="img/Rectangle 13-ter.png" alt="tercerimg">
-            </div>
-
-        </section>
-
-    </main>
+    <form action="#" id="form">
+        <h2>Formulario de Contacto</h2>
+        <input type="text" id="fname" name="fname" placeholder="Nombre">
+        <input type="text" id="lname" name="lname" placeholder="Apellido">
+        <input type="email" id="email" name="email" placeholder="Email">
+        <textarea id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
+        <button type="submit" name="btn">Enviar</button>
+        <div class="error" id="error"></div>
+    </form>
 
     <footer>
         

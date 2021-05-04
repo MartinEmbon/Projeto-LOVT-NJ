@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans:ital@0;1&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: ropa Sans;
+    background-color: white;
+
+}
+
+.container {
+    width:80%;
+    max-width: 1100px;
+    height:100vh;
+    background-color: #eee;
+    margin:0 auto;
+}
+
+header::after {
+    content:"";
+    position:absolute;
+    bottom: 0px;
+    top:5.5rem;
+    height: .5px;
+    
+    background-color: none;
+    width:80%;
+    box-shadow: 5px 2px 10px rgba(0,0,0,0.9);
+    
+}
+
+header .navbar {
+    width:100%;
+    background-color: white;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: top 1s ease;
+    margin:20px auto;
+    
+}
+
+header .logo h1{
+    font-size: 4rem;
+    align-items:self;
+    float:left;
+}
+
+
+
+header .logo h2 {
+    float:left;
+    margin-left:15px;
+        padding-top:5px;
+    
+}
+
+@media screen and (max-width:850px){
+    .logo {
+        align-self: flex-start;
+    }
+    
+    .logo h1,
+    .logo h2 {
+        margin:0;
+        padding:0;
+    }   
+    
+    .logo h2 {
+        margin-left:15px;
+        padding-top:5px;
+        
+    }
+    .card {
+        margin-right:10px;
+        
+    }
+}
+
+header .toggle-button {
+    position:absolute;
+    top:2.5rem;
+    right: 5.2rem;
+    display:none;
+    justify-content: space-between;
+    width:30px;
+    height:21px;
+    flex-direction: column;
+}
+
+header .toggle-button .bar{
+    background-color: black;
+    height: 3px;
+    width:100%;
+    border-radius:10px;
+}
+
+
+.navbar-links ul {
+    display:flex;
+    justify-content: space-between;
+    margin: 0;
+    padding:0;
+    background-color: black;
+    transition: top 5s ease;
+}
+
+.navbar-links li {
+    list-style: none;
+    padding:1rem 0;
+    
+}
+
+.navbar-links li:hover{
+    background-color: orangered;
+    
+}
+
+.navbar-links li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding:1rem;
+    color:white;
+
+}
+
+
+@media screen and (max-width:850px){
+    header .logo{
+        text-align: left;
+        margin:0;
+        padding:0;
+    }
+    
+    header .toggle-button {
+        display:flex;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        transition: top 1s ease;
+    }
+    
+    .navbar-links {
+        display:none;
+        width: 100%;
+    }
+    .navbar-links ul {
+        width:100%;
+        flex-direction:row;
+        justify-content: space-between;
+        transition: top 1s ease;
+    }
+   
+    
+    .navbar-links.active{
+        display:flex;
+        transition: top 1s ease;
+    }
+   
+}
+
+form {
+    margin:auto;
+    width: 550px;
+    height:400px;
+    background-color: #eee;
+    margin-bottom: 15px;
+}
+
+form input,
+form textarea {
+    width:100%;
+    display:block;
+    padding:5px;
+    border-radius: 5px;
+    margin-bottom: 7px;   
+    outline:none;
+}
+
+@media screen and (max-width:670px){
+    form input,
+    form textarea {
+    width:70%;
+    margin:auto;
+    margin-bottom: 7px;
+    }
+    form {
+        margin:auto;
+        width: 400px;
+        height:400px;
+    }
+}
+
+
+form h2 {
+    text-align: center;
+    padding:10px 0;
+}
+
+form textarea {
+    min-height:200px;
+    resize: none;
+}
+
+form button {
+    display: block;
+    width:50%;
+    height: 30px;
+    background-color:black;
+    color:white;
+    margin: auto;
+}
+
+.error {
+    font-size:.7rem;
+    color:red;
+    margin-top:5px;
+    text-align: center;
+    margin-bottom: 10px;
+    width:100%;    
+}
+
+footer {
+    height: 350px;
+    background-color:rgb(32, 32, 32);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+.mapa {
+    width: 50%;
+    text-align: left;
+    margin-left:2rem;
+}
+
+footer .mapa img {
+    width: 90%;
+}
+
+.contacto {
+    width: 50%;
+    line-height: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color:white;
+}
+
+.social-media img {
+    width:25px;       
+    margin-left: 8px;
+}
+
+.social-media p {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    
+}
+
+.social-media {
+    text-align:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
