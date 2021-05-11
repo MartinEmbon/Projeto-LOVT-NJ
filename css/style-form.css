@@ -227,57 +227,6 @@ form button {
     width:100%;    
 }
 
-footer {
-    height: 350px;
-    background-color:rgb(32, 32, 32);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-
-}
-
-.mapa {
-    width: 50%;
-    text-align: left;
-    margin-left:2rem;
-}
-
-footer .mapa img {
-    width: 90%;
-}
-
-.contacto {
-    width: 50%;
-    line-height: 50px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color:white;
-}
-
-.social-media img {
-    width:25px;       
-    margin-left: 8px;
-}
-
-.social-media p {
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    
-}
-
-.social-media {
-    text-align:center;
-}
-
-
-
-
-
-
-
 
 
 

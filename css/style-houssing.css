@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans:ital@0;1&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: ropa Sans;
+    background-color: white;
+
+}
+
+.container {
+    width:80%;
+    max-width: 1100px;    
+    margin:0 auto;
+    background-color:#eee;
+
+}
+
+.servicios {
+    text-align:center;
+    margin-top:.5rem;
+    
+    
+}
+
+.servicios h2 {
+    text-align:center;
+    color:black;
+    position:relative;
+}
+
+.servicios h2:after{
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:35%;
+    height: 3px;
+    width:30%;
+    background-color: grey;
+    transition: .3s ease-in-out;
+    transform:scaleX(0)
+}
+
+.servicios h2:hover::after {
+    transform:scaleX(1)
+}
+
+
+.servicios p {
+    text-align:center;
+    color:black;
+    margin-bottom:.5rem;
+}
+
+.titulo-especial {
+    text-align:center;
+    font-size:2.2rem;
+    margin-bottom:1rem;
+}
+
+.servicios i {
+    font-size:6rem;
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+
+.servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap:1rem;
+    align-content: center;
+}
+
+@media screen and (max-width:800px){
+    .servicios {
+        display:grid;
+        grid-template-columns: 1fr;
+        
+    }
+    
+}
+
